@@ -1,0 +1,51 @@
+.videoCard {
+  color: white;
+  width: 370px;
+  height: 400px;
+  padding: 10px;
+  transition: transform 100ms;
+  margin-bottom:10px;
+  margin-top:10px;
+  margin-right:10px;
+  /* border:1px solid red; */
+  box-shadow: 0px 5px 45px -7px rgba(0, 0, 0, 0.75);
+  border-radius:15px;
+  
+}
+
+.videoCard:hover {
+  transform: scale(1.05);
+  /* margin-right:20px; */
+  cursor: pointer;
+}
+
+.videoCard > img {
+  height: 300px;
+  width: 370px;
+  object-fit: contain;
+}
+
+.videoCardStats {
+  padding-top: 5px;
+  display: none;
+}
+
+.type, .date{
+  color: gray;
+  text-transform: uppercase;
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+}
+
+.ratingIcon{
+  margin-right: 10px;
+}
+
+.videoCard:hover > .videoCardStats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
